@@ -28,7 +28,6 @@ public class JoystickController : MonoBehaviour, IPointerDownHandler, IDragHandl
 
         joystickHandle.position = joystickPosition + normalizedDirection;
         inputVector = normalizedDirection / maxJoystickRange;
-        Debug.Log("Horizontal: " + Horizontal + "/t Vertical: " + Vertical);
     }
 
     public void OnPointerUp(PointerEventData eventData)
